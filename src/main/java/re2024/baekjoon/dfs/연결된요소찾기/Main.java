@@ -12,7 +12,7 @@ public class Main {
     static boolean[] visited;
     static int n, m, r;
     static int[] answer;
-    static int order = 0;
+    static int order = 1;
     public void dfs(int x) {
         visited[x] = true;
         answer[x] = order;
@@ -35,7 +35,7 @@ public class Main {
 
         // 1. 그래프 생성
         graph = new ArrayList[Max];
-        for (int i = 1; i<=n ; i++) {
+        for (int i = 0; i <= n ; i++) {
             graph[i] = new ArrayList<>();
         }
 
