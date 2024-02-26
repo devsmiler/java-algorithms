@@ -53,6 +53,7 @@ public class Main {
         // 2. 내림차순 정렬
         for (int i = 1; i <= n; i++) {
             Collections.sort(graph[i], Collections.reverseOrder());
+            
         }
         Main main = new Main();
         // 3. 재귀함수 호출
