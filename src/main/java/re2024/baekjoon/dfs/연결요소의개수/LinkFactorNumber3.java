@@ -36,13 +36,17 @@ class LinkFactorNumber3 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
-        graph = new ArrayList<Integer>[n+1]; 
+        
+        graph = new ArrayList[n+1];// Fix: Specify the type parameter
+
         for(int i = 0 ; i< n+1; i++){
             graph[i] = new ArrayList<Integer>();
         }
+
         visited = new boolean[MAX];
 
         int x, y;
+        
         // 1. 그래프 생성
         for (int i = 0; i < m; i++) {
             st = new StringTokenizer(br.readLine());
@@ -63,6 +67,6 @@ class LinkFactorNumber3 {
             }
 
         }
-        // System.out.println(answer);
+        System.out.println(answer);
     }
 }
